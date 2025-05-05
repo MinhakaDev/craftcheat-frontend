@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftCheat - Browse Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>CRAFT<span>CHEAT</span><span class="blink"></span></h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="products.html" class="active">Products</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Support</a>
+                    <a href="#">About</a>
+                </nav>
+                <div class="user-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search cheats...">
+                    </div>
+                    <button class="login-btn">Log In</button>
+                    <button class="cart-btn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h2>Browse Our <span>Elite</span> Collection</h2>
+                <p>Discover our extensive catalog of premium, undetected cheats and tools for your favorite games.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filter-content">
+                <div class="filter-group">
+                    <label>Game:</label>
+                    <select class="filter-select">
+                        <option value="all">All Games</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="csgo">CS2</option>
+                        <option value="warzone">Warzone</option>
+                        <option value="apex">Apex Legends</option>
+                        <option value="fortnite">Fortnite</option>
+                        <option value="minecraft">Minecraft</option>
+                        <option value="pubg">PUBG</option>
+                        <option value="rust">Rust</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Type:</label>
+                    <select class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="aimbot">Aimbot</option>
+                        <option value="esp">ESP & Wallhack</option>
+                        <option value="recoil">Recoil Control</option>
+                        <option value="spoofer">HWID Spoofer</option>
+                        <option value="utility">Utility Hacks</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price:</label>
+                    <select class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="under20">Under $20</option>
+                        <option value="20-40">$20 - $40</option>
+                        <option value="40plus">$40+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Sort By:</label>
+                    <select class="filter-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Customer Rating</option>
+                    </select>
+                </div>
+                <button class="filter-btn">Apply Filters</button>
+            </div>
+            <div class="active-filters">
+                <span class="filter-tag">Valorant <button class="remove-tag">×</button></span>
+                <span class="filter-tag">Aimbot <button class="remove-tag">×</button></span>
+                <button class="clear-filters">Clear All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Build Cheat to Any Game">
+                        <div class="product-badge">BEST SELLER</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">Any Game</div>
+                        <h4 class="product-title">You Choose The Game & I Build</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Any Windows Game</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Custumizable UI</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Custumizable Features</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$119.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Warzone Cheat Suite">
+                        <div class="product-badge">BEST SELLER</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">WARZONE</div>
+                        <h4 class="product-title">Ultimate Battle Royale Package</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>HWID Spoofer Included</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Advanced Player Tracking</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Loot & Vehicle ESP</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$39.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Minecraft Utility Mod">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">MINECRAFT</div>
+                        <h4 class="product-title">Pro Utility Mod Bundle</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Server-side Bypasses</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>X-Ray & Cave Finder</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>PvP Enhancement Kit</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$19.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="CSGO Advanced Pack">
+                        <div class="product-badge">NEW</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">CS2</div>
+                        <h4 class="product-title">Elite CS2 Performance Pack</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Skin Changer Included</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Advanced Recoil Control</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>VAC-Undetected</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$24.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Apex Legends Cheat Pack">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">APEX LEGENDS</div>
+                        <h4 class="product-title">Apex Predator Advantage Kit</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Smooth Aimbot</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Item & Enemy ESP</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Recoil Compensation</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$34.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Fortnite Elite Package">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">FORTNITE</div>
+                        <h4 class="product-title">Victory Royale Package</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>EAC Bypass</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Silent Aim & Soft Aim</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Build Assistant</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$29.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="PUBG Advantage Kit">
+                        <div class="product-badge">TRUSTED</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">PUBG</div>
+                        <h4 class="product-title">Chicken Dinner Pro Package</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Long-Range Aimbot</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Vehicle & Item ESP</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>No Recoil Script</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$32.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="HWID Spoofer">
+                        <div class="product-badge">ESSENTIAL</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">ALL GAMES</div>
+                        <h4 class="product-title">Universal HWID Spoofer</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Hardware ID Masking</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Anti-Ban Protection</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Works With All Major Games</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$49.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Rust Advantage Kit">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">RUST</div>
+                        <h4 class="product-title">Rust Domination Suite</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Adaptive Recoil Scripts</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Player & Resource ESP</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Base Builder Helper</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$36.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="Rainbow Six Siege Pack">
+                        <div class="product-badge">PREMIUM</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">RAINBOW SIX SIEGE</div>
+                        <h4 class="product-title">R6S Elite Operator Kit</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Battleye Bypass</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Operator ESP Through Walls</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>No Spread & No Recoil</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$34.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="GTA Online Mod Menu">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">GTA ONLINE</div>
+                        <h4 class="product-title">Ultimate Mod Menu</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Money Drop & Recovery</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Teleport & Vehicle Spawning</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>God Mode & Player Protection</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$27.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/300/160" alt="League of Legends Scripts">
+                        <div class="product-badge">NEW</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-game">LEAGUE OF LEGENDS</div>
+                        <h4 class="product-title">Challenger Script Collection</h4>
+                        <div class="product-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Champion-Specific Scripts</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Auto Dodge & Skill Prediction</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">✓</span>
+                                <span>Map Awareness Helpers</span>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <div class="product-price">$22.99</div>
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination">
+        <div class="container">
+            <div class="pagination-controls">
+                <button class="page-btn prev-btn">Previous</button>
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                    <span class="page-ellipsis">...</span>
+                    <button class="page-number">8</button>
+                </div>
+                <button class="page-btn next-btn">Next</button>
+            </div>
+            <div class="results-info">
+                Showing 1-12 of 93 products
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Categories -->
+    <section class="related-categories">
+        <div class="container">
+            <div class="section-header">
+                <h3>Popular Categories</h3>
+            </div>
+            <div class="category-chips">
+                <a href="#" class="category-chip">FPS Games</a>
+                <a href="#" class="category-chip">Battle Royale</a>
+                <a href="#" class="category-chip">Aimbots</a>
+                <a href="#" class="category-chip">ESP & Wallhacks</a>
+                <a href="#" class="category-chip">HWID Spoofers</a>
+                <a href="#" class="category-chip">Survival Games</a>
+                <a href="#" class="category-chip">Sports Games</a>
+                <a href="#" class="category-chip">MMORPG</a>
+                <a href="#" class="category-chip">Recoil Scripts</a>
+                <a href="#" class="category-chip">Mod Menus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <section class="trust-banner">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <div class="trust-content">
+                        <h4>Secure Payments</h4>
+                        <p>Multiple payment methods with encrypted transactions</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🔄</div>
+                    <div class="trust-content">
+                        <h4>Regular Updates</h4>
+                        <p>All products updated with game patches</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💬</div>
+                    <div class="trust-content">
+                        <h4>24/7 Support</h4>
+                        <p>Professional support team always available</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-content">
+                        <h4>Instant Delivery</h4>
+                        <p>Automatic delivery after purchase confirmation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>CraftCheat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FPS Games</a></li>
+                        <li><a href="#">Battle Royale</a></li>
+                        <li><a href="#">MMORPG</a></li>
+                        <li><a href="#">Sports Games</a></li>
+                        <li><a href="#">New Releases</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Installation Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report a Bug</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Developer Blog</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CraftCheat. All rights reserved. Not affiliated with any game developers or publishers.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
