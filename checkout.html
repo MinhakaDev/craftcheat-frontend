@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftCheat - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>CRAFT<span>CHEAT</span><span class="blink"></span></h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="#">Categories</a>
+                    <a href="#">Support</a>
+                    <a href="#">About</a>
+                </nav>
+                <div class="user-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search cheats...">
+                    </div>
+                    <button class="login-btn">Log In</button>
+                    <button class="cart-btn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h2>Check<span>out</span></h2>
+                <p>Complete your purchase and get instant access to premium gaming advantages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-container">
+                <!-- Checkout Form -->
+                <div class="checkout-form-container">
+                    <form class="checkout-form">
+                        <!-- Account Information -->
+                        <div class="form-section">
+                            <h3>Account Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="Your email address">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" placeholder="Choose a username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" placeholder="Choose a password">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Information -->
+                        <div class="form-section">
+                            <h3>Payment Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardholder">Cardholder Name</label>
+                                    <input type="text" id="cardholder" placeholder="Name on card">
+                                </div>
+                            </div>
+                            <div class="card-input-row">
+                                <div class="form-group card-number">
+                                    <label for="cardnumber">Card Number</label>
+                                    <input type="text" id="cardnumber" placeholder="1234 5678 9012 3456">
+                                </div>
+                                <div class="form-group card-expiry">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group card-cvv">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" placeholder="123">
+                                </div>
+                            </div>
+                            <div class="card-icons">
+                                <div class="card-icon">VISA</div>
+                                <div class="card-icon">MC</div>
+                                <div class="card-icon">AMEX</div>
+                                <div class="card-icon">PP</div>
+                                <div class="card-icon">CRYPTO</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Billing Information -->
+                        <div class="form-section">
+                            <h3>Billing Address</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country">
+                                        <option value="">Select Country</option>
+                                        <option value="us">United States</option>
+                                        <option value="ca">Canada</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="au">Australia</option>
+                                        <option value="eu">European Union</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="address">Address</label>
+                                    <input type="text" id="address" placeholder="Street address">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" placeholder="City">
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province</label>
+                                    <input type="text" id="state" placeholder="State/Province">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">ZIP/Postal Code</label>
+                                    <input type="text" id="zip" placeholder="ZIP/Postal Code">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Recommended Add-ons -->
+                        <div class="form-section recommended-addons">
+                            <h3>Recommended Add-ons</h3>
+                            <div class="addon-item">
+                                <input type="checkbox" class="addon-checkbox" id="addon1">
+                                <div class="addon-info">
+                                    <div class="addon-name">HWID Spoofer</div>
+                                    <div class="addon-desc">Prevent hardware bans with our premium HWID spoofer</div>
+                                </div>
+                                <div class="addon-price">+$19.99</div>
+                            </div>
+                            <div class="addon-item">
+                                <input type="checkbox" class="addon-checkbox" id="addon2">
+                                <div class="addon-info">
+                                    <div class="addon-name">VIP Priority Support</div>
+                                    <div class="addon-desc">Get 24/7 priority technical support for 30 days</div>
+                                </div>
+                                <div class="addon-price">+$9.99</div>
+                            </div>
+                            <div class="addon-item">
+                                <input type="checkbox" class="addon-checkbox" id="addon3">
+                                <div class="addon-info">
+                                    <div class="addon-name">Extended Protection Plan</div>
+                                    <div class="addon-desc">Lifetime updates and anti-ban measures</div>
+                                </div>
+                                <div class="addon-price">+$29.99</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="order-header">
+                        <h3>Order Summary</h3>
+                        <a href="#" class="edit-cart">Edit Cart</a>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <div class="item-image">
+                                <img src="/api/placeholder/60/60" alt="Valorant Pro Aimbot">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-name">Valorant Pro Aimbot & ESP Package</div>
+                                <div class="item-meta">1 Month Subscription</div>
+                            </div>
+                            <div class="item-price">$29.99</div>
+                        </div>
+                        <div class="order-item">
+                            <div class="item-image">
+                                <img src="/api/placeholder/60/60" alt="CS2 Elite Pack">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-name">Elite CS2 Performance Pack</div>
+                                <div class="item-meta">3 Months Subscription</div>
+                            </div>
+                            <div class="item-price">$59.99</div>
+                        </div>
+                    </div>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>$89.98</span>
+                        </div>
+                        <div class="total-row">
+                            <span>New User Discount</span>
+                            <span>-$10.00</span>
+                        </div>
+                        <div class="total-row final">
+                            <span>Total</span>
+                            <span class="final-price">$79.98</span>
+                        </div>
+                    </div>
+                    <button class="checkout-btn">Complete Purchase</button>
+                    <div class="security-info">
+                        <div class="security-icon">🔒</div>
+                        <div class="security-text">All transactions are secured with 256-bit encryption. Your personal information is protected.</div>
+                    </div>
+                    <div class="payment-methods">
+                        <div class="payment-method">Credit Card</div>
+                        <div class="payment-method">PayPal</div>
+                        <div class="payment-method">Crypto</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <section class="trust-banner">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <div class="trust-content">
+                        <h4>Secure Transactions</h4>
+                        <p>All payments are processed securely with advanced encryption</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-content">
+                        <h4>Instant Delivery</h4>
+                        <p>Get access to your purchases immediately after payment</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💬</div>
+                    <div class="trust-content">
+                        <h4>24/7 Support</h4>
+                        <p>Our technical team is available round the clock for assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>CraftCheat</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">FPS Games</a></li>
+                        <li><a href="#">Battle Royale</a></li>
+                        <li><a href="#">MMORPG</a></li>
+                        <li><a href="#">Sports Games</a></li>
+                        <li><a href="#">New Releases</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Installation Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report a Bug</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Community</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Developer Blog</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 CraftCheat. All rights reserved. Not affiliated with any game developers or publishers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script would typically go here -->
+    <script>
+        // Simple validation script for the checkout form
+        document.querySelector('.checkout-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const email = document.getElementById('email').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const cardNumber = document.getElementById('cardnumber').value;
+            
+            // Simple validation
+            if (!email || !username || !password || !cardNumber) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // Calculate any selected add-ons
+            let addOnTotal = 0;
+            if (document.getElementById('addon1').checked) addOnTotal += 19.99;
+            if (document.getElementById('addon2').checked) addOnTotal += 9.99;
+            if (document.getElementById('addon3').checked) addOnTotal += 29.99;
+            
+            // Update total if needed
+            if (addOnTotal > 0) {
+                const currentTotal = parseFloat(document.querySelector('.final-price').textContent.replace('$', ''));
+                const newTotal = (currentTotal + addOnTotal).toFixed(2);
+                document.querySelector('.final-price').textContent = '$' + newTotal;
+                
+                // Add selected add-ons to order summary
+                const orderItems = document.querySelector('.order-items');
+                if (document.getElementById('addon1').checked) {
+                    orderItems.innerHTML += `
+                        <div class="order-item">
+                            <div class="item-image">
+                                <img src="/api/placeholder/60/60" alt="HWID Spoofer">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-name">HWID Spoofer</div>
+                                <div class="item-meta">Add-on</div>
+                            </div>
+                            <div class="item-price">$19.99</div>
+                        </div>
+                    `;
+                }
+                // Similarly for other add-ons
+            }
+            
+            // Simulate successful order
+            setTimeout(function() {
+                alert('Order placed successfully! Redirecting to download page...');
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
