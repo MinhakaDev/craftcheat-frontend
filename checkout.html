@@ -315,59 +315,5 @@
     </footer>
 
     <!-- Script would typically go here -->
-    <script>
-        // Simple validation script for the checkout form
-        document.querySelector('.checkout-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const email = document.getElementById('email').value;
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const cardNumber = document.getElementById('cardnumber').value;
-            
-            // Simple validation
-            if (!email || !username || !password || !cardNumber) {
-                alert('Please fill in all required fields');
-                return;
-            }
-            
-            // Calculate any selected add-ons
-            let addOnTotal = 0;
-            if (document.getElementById('addon1').checked) addOnTotal += 19.99;
-            if (document.getElementById('addon2').checked) addOnTotal += 9.99;
-            if (document.getElementById('addon3').checked) addOnTotal += 29.99;
-            
-            // Update total if needed
-            if (addOnTotal > 0) {
-                const currentTotal = parseFloat(document.querySelector('.final-price').textContent.replace('$', ''));
-                const newTotal = (currentTotal + addOnTotal).toFixed(2);
-                document.querySelector('.final-price').textContent = '$' + newTotal;
-                
-                // Add selected add-ons to order summary
-                const orderItems = document.querySelector('.order-items');
-                if (document.getElementById('addon1').checked) {
-                    orderItems.innerHTML += `
-                        <div class="order-item">
-                            <div class="item-image">
-                                <img src="/api/placeholder/60/60" alt="HWID Spoofer">
-                            </div>
-                            <div class="item-details">
-                                <div class="item-name">HWID Spoofer</div>
-                                <div class="item-meta">Add-on</div>
-                            </div>
-                            <div class="item-price">$19.99</div>
-                        </div>
-                    `;
-                }
-                // Similarly for other add-ons
-            }
-            
-            // Simulate successful order
-            setTimeout(function() {
-                alert('Order placed successfully! Redirecting to download page...');
-            }, 1500);
-        });
-    </script>
 </body>
 </html>

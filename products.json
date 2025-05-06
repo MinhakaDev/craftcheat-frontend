@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Csgo2 1 month",
+        "price": 240.00,
+        "img": "somepath",
+        "imgalt": "img description",
+        "badge": "Best Seller",
+        "game": "Csgo2",
+        "features": ["Any Windows Game","Custumizable UI","Custumizable Features"]
+    },
+    {
+        "id": 2,
+        "name": "Csgo2 1 month",
+        "price": 19.99,
+        "img": "somepath",
+        "imgalt": "img description",
+        "badge": "Best Seller",
+        "game": "Csgo2",
+        "features": ["Any Windows Game","Custumizable UI","Custumizable Features"]
+    }
+]
