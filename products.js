@@ -1,6 +1,7 @@
 
 
 let listProductsHTML = document.querySelector('.products-grid')
+let listCartHTML = document.querySelector('cart-items')
 let listProducts = [];
 let cartItems = [];
 

@@ -271,7 +271,80 @@
             </div>
         </div>
     </footer>
+
+        <!-- Cart Overlay -->
+        <div class="cart-overlay"></div>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3>Your Cart (3)</h3>
+                <button class="close-btn">×</button>
+            </div>
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="/api/placeholder/80/60" alt="Valorant Pro Aimbot">
+                    <div class="cart-item-info">
+                        <h4>Valorant Pro Aimbot</h4>
+                        <div class="cart-item-meta">
+                            <span class="item-subscription">1 Month</span>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">$29.99</div>
+                    <button class="remove-item">×</button>
+                </div>
+                <div class="cart-item">
+                    <img src="/api/placeholder/80/60" alt="CS2 Elite Pack">
+                    <div class="cart-item-info">
+                        <h4>CS2 Elite Pack</h4>
+                        <div class="cart-item-meta">
+                            <span class="item-subscription">3 Months</span>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">$59.99</div>
+                    <button class="remove-item">×</button>
+                </div>
+                <div class="cart-item">
+                    <img src="/api/placeholder/80/60" alt="HWID Spoofer">
+                    <div class="cart-item-info">
+                        <h4>HWID Spoofer</h4>
+                        <div class="cart-item-meta">
+                            <span class="item-subscription">Lifetime</span>
+                        </div>
+                    </div>
+                    <div class="cart-item-price">$49.99</div>
+                    <button class="remove-item">×</button>
+                </div>
+    
+                <!-- Empty Cart State (hidden by default) -->
+                <div class="empty-cart" style="display: none;">
+                    <div class="empty-cart-icon">🛒</div>
+                    <h4>Your cart is empty</h4>
+                    <p>Browse our products and add something cool!</p>
+                    <button class="secondary-btn">Browse Products</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$139.97</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span>-$14.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>$125.97</span>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button class="primary-btn">Checkout</button>
+                <button class="secondary-btn">Continue Shopping</button>
+            </div>
+        </div>
     <!-- Script would typically go here -->
     <script src="products.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
