@@ -2,10 +2,12 @@ const cartBtn = document.querySelector('.cart-btn');
 const closeBtn = document.querySelector('.close-btn');
 const cartSidebar = document.querySelector('.cart-sidebar');
 const cartOverlay = document.querySelector('.cart-overlay');
+let cartSummaryHTML = document.querySelector('.cart-summary')
 
 const iconCartQuantity = document.querySelector('.cart-count')
 const listCartHTML = document.querySelector('.cart-items')
 let cartItems = [];
+let listProducts = [];
 
 function cart()
 {
@@ -19,6 +21,7 @@ function cart()
             deleteProduct(e);
         }
     });
+    
 }
 
 function openCart() {
@@ -125,11 +128,11 @@ function addCartToHtml()
                     <div class="cart-item-info">
                         <h4>${info.name}</h4>
                         <div class="cart-item-meta">
-                            <span class="item-subscription">${info.time} Month</span>
+                            <span class="item-subscription">${info.time}</span>
                             <span class="discount-badge">-${info.discount_porcentage}%</span>
                         </div>
                     </div>
-                    <div class="cart-item-price">$${discountPrice}</div>
+                    <div class="cart-item-price">$${info.price}</div>
                     <button class="remove-item">×</button>
                     `;
 
@@ -175,4 +178,4 @@ function checkEmptyCart() {
 }
 
 
-cart();
+document.addEventListener("DOMContentLoaded", cart);

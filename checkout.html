@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CraftCheat - Checkout</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="checkout.css">
+
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -51,128 +55,122 @@
                 <!-- Checkout Form -->
                 <div class="checkout-form-container">
                     <form class="checkout-form">
-                        <!-- Account Information -->
+                        <!-- Payment Method Selection -->
                         <div class="form-section">
-                            <h3>Account Information</h3>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" placeholder="Your email address">
+                            <h3>Payment Method</h3>
+                            <div class="payment-selector">
+                                <div class="payment-option" data-payment="credit-card">
+                                    <div class="payment-option-icon">💳</div>
+                                    <div class="payment-option-label">Credit Card</div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" id="username" placeholder="Choose a username">
+                                <div class="payment-option" data-payment="paypal">
+                                    <div class="payment-option-icon">🅿️</div>
+                                    <div class="payment-option-label">PayPal</div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="password" id="password" placeholder="Choose a password">
+                                <div class="payment-option" data-payment="crypto">
+                                    <div class="payment-option-icon">₿</div>
+                                    <div class="payment-option-label">Crypto</div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Payment Information -->
-                        <div class="form-section">
-                            <h3>Payment Information</h3>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="cardholder">Cardholder Name</label>
-                                    <input type="text" id="cardholder" placeholder="Name on card">
+
+                        <!-- Credit Card Payment Form (Default) -->
+                        <div class="payment-form" id="credit-card-form">
+                            <div class="form-section">
+                                <h3>Card Details</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cardholder">Cardholder Name</label>
+                                        <input type="text" id="cardholder" placeholder="Name on card">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-input-row">
-                                <div class="form-group card-number">
-                                    <label for="cardnumber">Card Number</label>
-                                    <input type="text" id="cardnumber" placeholder="1234 5678 9012 3456">
+                                <div class="card-input-row">
+                                    <div class="form-group card-number">
+                                        <label for="cardnumber">Card Number</label>
+                                        <input type="text" id="cardnumber" placeholder="1234 5678 9012 3456">
+                                    </div>
+                                    <div class="form-group card-expiry">
+                                        <label for="expiry">Expiry Date</label>
+                                        <input type="text" id="expiry" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group card-cvv">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" placeholder="123">
+                                    </div>
                                 </div>
-                                <div class="form-group card-expiry">
-                                    <label for="expiry">Expiry Date</label>
-                                    <input type="text" id="expiry" placeholder="MM/YY">
-                                </div>
-                                <div class="form-group card-cvv">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" placeholder="123">
-                                </div>
-                            </div>
-                            <div class="card-icons">
-                                <div class="card-icon">VISA</div>
-                                <div class="card-icon">MC</div>
-                                <div class="card-icon">AMEX</div>
-                                <div class="card-icon">PP</div>
-                                <div class="card-icon">CRYPTO</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Billing Information -->
-                        <div class="form-section">
-                            <h3>Billing Address</h3>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="country">Country</label>
-                                    <select id="country">
-                                        <option value="">Select Country</option>
-                                        <option value="us">United States</option>
-                                        <option value="ca">Canada</option>
-                                        <option value="uk">United Kingdom</option>
-                                        <option value="au">Australia</option>
-                                        <option value="eu">European Union</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="address">Address</label>
-                                    <input type="text" id="address" placeholder="Street address">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="city">City</label>
-                                    <input type="text" id="city" placeholder="City">
-                                </div>
-                                <div class="form-group">
-                                    <label for="state">State/Province</label>
-                                    <input type="text" id="state" placeholder="State/Province">
-                                </div>
-                                <div class="form-group">
-                                    <label for="zip">ZIP/Postal Code</label>
-                                    <input type="text" id="zip" placeholder="ZIP/Postal Code">
+                                <div class="card-icons">
+                                    <div class="card-icon">VISA</div>
+                                    <div class="card-icon">MC</div>
+                                    <div class="card-icon">AMEX</div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Recommended Add-ons -->
-                        <div class="form-section recommended-addons">
-                            <h3>Recommended Add-ons</h3>
-                            <div class="addon-item">
-                                <input type="checkbox" class="addon-checkbox" id="addon1">
-                                <div class="addon-info">
-                                    <div class="addon-name">HWID Spoofer</div>
-                                    <div class="addon-desc">Prevent hardware bans with our premium HWID spoofer</div>
+
+                        <!-- PayPal Payment Form (Initially Hidden) -->
+                        <div class="payment-form" id="paypal-form" style="display: none;">
+                            <div class="form-section">
+                                <h3>PayPal Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="paypal-email">PayPal Email</label>
+                                        <input type="email" id="paypal-email" placeholder="your@email.com">
+                                    </div>
                                 </div>
-                                <div class="addon-price">+$19.99</div>
+                                <div class="paypal-notice">
+                                    <div class="notice-icon">ℹ️</div>
+                                    <div class="notice-text">
+                                        You will be redirected to PayPal to complete your payment after clicking
+                                        "Complete Purchase".
+                                    </div>
+                                </div>
                             </div>
-                            <div class="addon-item">
-                                <input type="checkbox" class="addon-checkbox" id="addon2">
-                                <div class="addon-info">
-                                    <div class="addon-name">VIP Priority Support</div>
-                                    <div class="addon-desc">Get 24/7 priority technical support for 30 days</div>
+                        </div>
+
+                        <!-- Crypto Payment Form (Initially Hidden) -->
+                        <div class="payment-form" id="crypto-form" style="display: none;">
+                            <div class="form-section">
+                                <h3>Cryptocurrency Payment</h3>
+                                <div class="crypto-options">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="crypto-currency">Select Cryptocurrency</label>
+                                            <select id="crypto-currency">
+                                                <option value="btc">Bitcoin (BTC)</option>
+                                                <option value="eth">Ethereum (ETH)</option>
+                                                <option value="usdt">Tether (USDT)</option>
+                                                <option value="bnb">Binance Coin (BNB)</option>
+                                                <option value="sol">Solana (SOL)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="crypto-qr-container">
+                                        <div class="crypto-qr-code">
+                                            <div class="qr-placeholder">
+                                                QR Code will be generated after clicking "Complete Purchase"
+                                            </div>
+                                        </div>
+                                        <div class="crypto-address">
+                                            <label for="wallet-address">Wallet Address</label>
+                                            <div class="copy-address">
+                                                <input type="text" id="wallet-address"
+                                                    value="Payment address will be generated" readonly>
+                                                <button class="copy-btn" title="Copy to clipboard">📋</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="crypto-notice">
+                                        <div class="notice-icon">⚠️</div>
+                                        <div class="notice-text">
+                                            Please complete the transaction within 15 minutes. Your purchase will be
+                                            processed once the transaction is confirmed on the blockchain.
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="addon-price">+$9.99</div>
-                            </div>
-                            <div class="addon-item">
-                                <input type="checkbox" class="addon-checkbox" id="addon3">
-                                <div class="addon-info">
-                                    <div class="addon-name">Extended Protection Plan</div>
-                                    <div class="addon-desc">Lifetime updates and anti-ban measures</div>
-                                </div>
-                                <div class="addon-price">+$29.99</div>
                             </div>
                         </div>
                     </form>
                 </div>
-                
+
                 <!-- Order Summary -->
                 <div class="order-summary">
                     <div class="order-header">
@@ -186,20 +184,11 @@
                             </div>
                             <div class="item-details">
                                 <div class="item-name">Valorant Pro Aimbot & ESP Package</div>
-                                <div class="item-meta">1 Month Subscription</div>
+                                <span class="item-subscription">1 Month Subscription</span>
                             </div>
                             <div class="item-price">$29.99</div>
                         </div>
-                        <div class="order-item">
-                            <div class="item-image">
-                                <img src="/api/placeholder/60/60" alt="CS2 Elite Pack">
-                            </div>
-                            <div class="item-details">
-                                <div class="item-name">Elite CS2 Performance Pack</div>
-                                <div class="item-meta">3 Months Subscription</div>
-                            </div>
-                            <div class="item-price">$59.99</div>
-                        </div>
+                        
                     </div>
                     <div class="order-totals">
                         <div class="total-row">
@@ -218,7 +207,8 @@
                     <button class="checkout-btn">Complete Purchase</button>
                     <div class="security-info">
                         <div class="security-icon">🔒</div>
-                        <div class="security-text">All transactions are secured with 256-bit encryption. Your personal information is protected.</div>
+                        <div class="security-text">All transactions are secured with 256-bit encryption. Your personal
+                            information is protected.</div>
                     </div>
                     <div class="payment-methods">
                         <div class="payment-method">Credit Card</div>
@@ -273,7 +263,7 @@
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Products</h4>
                     <ul class="footer-links">
@@ -284,7 +274,7 @@
                         <li><a href="#">New Releases</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Support</h4>
                     <ul class="footer-links">
@@ -295,7 +285,7 @@
                         <li><a href="#">Report a Bug</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Community</h4>
                     <ul class="footer-links">
@@ -307,13 +297,67 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2025 CraftCheat. All rights reserved. Not affiliated with any game developers or publishers.</p>
+                <p>&copy; 2025 CraftCheat. All rights reserved. Not affiliated with any game developers or publishers.
+                </p>
             </div>
         </div>
     </footer>
+<!-- Cart Overlay -->
+<div class="cart-overlay"></div>
 
-    <!-- Script would typically go here -->
+<!-- Cart Sidebar -->
+<div class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Your Cart (3)</h3>
+        <button class="close-btn">×</button>
+    </div>
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="/api/placeholder/80/60" alt="Valorant Pro Aimbot">
+            <div class="cart-item-info">
+                <h4>Valorant Pro Aimbot</h4>
+                <div class="cart-item-meta">
+                    <span class="item-subscription">1 Month</span>
+                </div>
+            </div>
+            <div class="cart-item-price">$29.99</div>
+            <button class="remove-item">×</button>
+        </div>
+
+        <!-- Empty Cart State (hidden by default) -->
+        <div class="empty-cart" style="display: none;">
+            <div class="empty-cart-icon">🛒</div>
+            <h4>Your cart is empty</h4>
+            <p>Browse our products and add something cool!</p>
+            <button class="secondary-btn">Browse Products</button>
+        </div>
+    </div>
+    <div class="cart-summary">
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$139.97</span>
+        </div>
+        <div class="summary-row">
+            <span>Discount</span>
+            <span>-$14.00</span>
+        </div>
+        <div class="summary-row total">
+            <span>Total</span>
+            <span>$125.97</span>
+        </div>
+    </div>
+    <div class="cart-actions">
+        <button class="primary-btn">Checkout</button>
+        <button class="secondary-btn">Continue Shopping</button>
+    </div>
+</div>
+<!-- Script would typically go here -->
+    <script src="checkout.js"></script>
+    <script src="cart.js"></script>
+
+
 </body>
+
 </html>

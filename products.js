@@ -1,6 +1,4 @@
-let cartSummaryHTML = document.querySelector('.cart-summary')
 let listProductsHTML = document.querySelector('.products-grid')
-let listProducts = [];
 
 
 const initPage = () => {
